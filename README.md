@@ -43,7 +43,7 @@ TP4056(solar charger controller) the board which responsible for charging a batt
 
 GPIO13 is used by default for sensor powering.
 
-The sensor using capacitive kind of measurement around the sensor probe.(This sensor works on 16 MHz frequency consequently there is no constant current along the sensor and no electrolysis.)
+The sensor using capacitive kind of measurement around the sensor probe.( consequently there is no constant current along the sensor and no electrolysis.)
 Depending on that value it calculates absolute water(Wa) capacity of current place of soil.
 Wa=(Mw-Md)/Md*100% (where Mw- a mass of moistured soil and Md- a mass of dryed soil). Relative soil humidity (Wr) is calculated as Wr= Wa/Wn*100% (where Wn- is Fields water capacity coefficient)
 Due to high stage non homogeneous structure the soil has different ability to keep the water inside. This dependency is expressed in three major coefficient for different kinds of soil - sandy,loam and clay.
@@ -55,6 +55,7 @@ For outdoor using it is make a sense to bury the sensor probe to the level of pl
 The measurement are very voltage dependable.Due to battery discharging the figures might changing dramatically.For this issue i'm using two lagrange approximations.
 I have plot two graphs - the first empiric values of capacity changes during the voltage, the second - soil humidity evaluation through the capacity and kind of soil.
 But still... the more stable power gives more stable results. That's why i'm using MCP1700 LDO in my circuit.
+I still have to rack my brain over temperature compensation , but turns out that it highly correlated with real soil structure and water content.
 
 Battery_Voltage - Mpp analog device for battery voltage reporting. (device name UDN+_B)
 Soil_Humidity -   Mpp analog device for soil humidity reporting. (device name UDN+_H)
