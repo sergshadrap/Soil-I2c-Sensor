@@ -59,9 +59,9 @@ But still... the more stable power gives more stable results. That's why i'm usi
 Battery_Voltage - Mpp analog device for battery voltage reporting. (device name UDN+_B)
 Soil_Humidity -   Mpp analog device for soil humidity reporting. (device name UDN+_H)
 Soil_Temperature  - Mpp analog device for bsoil temperature reporting. (device name UDN+_T)
- Overall current consumption : deep sleep mode - about 50ua (30ua in battery config), measurment(no wifi) about 20ma, wifi mode (data transmission) about 75ma.
+ Overall current consumption : deep sleep mode - about 30-50ua (20ua in battery config), measurment(no wifi) about 20ma, wifi mode (data transmission) about 75-85ma.
  In solar panel version :
- Typically i'm using 80x80 mm solar panel that gives about 40-50ma charging current in sunny day (for Solar irradiance in my region) and LION TR18650 3500mAh 3.7V battery.
+ Typically i'm using 80x80 mm solar panel that gives about 5-80ma charging current in sunny day (for Solar irradiance in my region) and LION TR18650 3500mAh 3.7V battery.
 For the battery version you don't need any LDO , TP4056 charger controller or solar pannel. Just only 2 AA 1.5V battery and ESP8266 .
 
 Sergey S. shadrap@yandex.ru .
